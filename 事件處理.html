@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>事件處理</title>
+    </head>
+    <body onclick="console.log('Body Click')">
+        <h3>Event Handling</h3>
+        <!--div onclick="alert('Hello');"
+            ondblclick="alert('Double Click');">Click</div>-->
+            <div
+                onmouseover="over(this);"
+                onmouseout="out(this);">Click</div>
+            <button 
+                onmouseover="over(this);"
+                onmouseout="out(this);">OK</button>
+            <script>
+                function over(elem){
+                    elem.style.color="red";
+                    elem.style.fontWeight="bold";
+                }
+                function out(){
+                    elem.style.color="black";
+                    elem.style.fontWeight="normal";
+                }
+            </script>
+        </body>
+</html>
